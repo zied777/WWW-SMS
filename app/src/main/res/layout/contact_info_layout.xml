@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="17dp"
+    android:layout_marginBottom="1dp">
+
+    <me.fahmisdk6.avatarview.AvatarView
+        android:id="@+id/contact_info_layout_image_1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        app:avCornerRadius="8dp"
+        app:avBgTextColor="?attr/colorPrimary"
+        app:avTextColor="?attr/colorOnPrimary"
+        app:avTextSize="10sp"
+        android:font="@font/avenir_black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/contact_info_layout_image_1"
+        android:layout_marginStart="17dp"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/contact_info_layout_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SOS Credit"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/contact_info_layout_text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vous venez d'activier un deuxième S..."
+            android:ellipsize="end"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+</RelativeLayout>

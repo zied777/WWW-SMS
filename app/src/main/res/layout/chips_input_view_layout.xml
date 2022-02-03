@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<com.google.android.flexbox.FlexboxLayout
+    android:id="@+id/recipient_group_FL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_gravity="center_vertical"
+    app:flexWrap="wrap"
+    app:alignItems="stretch"
+    app:alignContent="space_around"
+    app:showDivider="beginning|middle|end"
+    android:background="?attr/colorPrimaryContainer"
+    android:padding="17dp"
+    android:elevation="7dp">
+
+    <AutoCompleteTextView
+        android:id="@+id/recipient_input_ET"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        app:layout_flexGrow="1"
+        android:background="@android:color/transparent"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:hint="Enter a name, number, ..."/>
+
+</com.google.android.flexbox.FlexboxLayout>
+    <HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    android:layout_marginTop="10dp">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chips_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:chipSpacing="8dp"
+            app:singleSelection="true"/>
+
+    </HorizontalScrollView>
+
+</LinearLayout>
